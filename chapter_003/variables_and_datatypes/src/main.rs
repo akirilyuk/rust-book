@@ -61,4 +61,45 @@ fn main() {
     let element = a[index];
 
     println!("The value of the element at index {} is {}", index, element);
+
+    another_function(x);
+}
+
+fn five() -> i32{
+    5
+}
+
+fn plus_one(x: i32) -> i32{
+    x + 1
+}
+
+fn another_function(x: i32){
+    println!("The Value of x is {}", x);
+
+    let y = {
+        let x = 3;
+        x +1
+    };
+
+    println!("Der Wert von y ist: {}", y);
+
+    let x = five();
+
+    println!("The value of x is: {}", x);
+
+    let x = plus_one(10);
+
+    println!("The value of x is: {}", x);
+}
+
+fn homework_celsius_to_fahrenheit(){
+    //todo implement
+}
+
+fn homework_fibonacchi(depth: i32){
+    // todo implement
+}
+
+fn homework_print_christmas_text(){
+    // todo implement
 }
